@@ -1,0 +1,44 @@
+
+services:
+  frontend:
+    build:
+      context: ./
+      dockerfile: Dockerfile 
+    ports:
+      - "3000:3000"
+    depends_on:
+      - backend
+      - gemini
+    environment:
+   
+
+  backend:
+    build:
+      context: ./server
+      dockerfile: Dockerfile # Development mode
+    ports:
+      - "5000:5000"
+    depends_on:
+      - gemini
+
+  gemini:
+    build:
+      context: ./Gemini
+      dockerfile: Dockerfile
+    ports:
+      - "5001:5001"
+ 
+    environment:
+     #
+    command: python app.py
+
+  nginx:
+    build:
+      context: ./nginx
+      dockerfile: Dockerfile
+    ports:
+      - "80:80"
+    depends_on:
+      - frontend
+      - backend
+      - gemini
