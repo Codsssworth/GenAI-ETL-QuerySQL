@@ -1,4 +1,5 @@
-demonstraintion project employing redis pub-sub and kafka distributed event processing with socket.io  configured to listen on websocket for messages and prisma orm for generating message schemas
+SQL etl pipeline hooked to aiven postgreSQL , ORM transforms and creates tables based on user csv ,passes table schemas ,with natural language parameters to gemini_pro 1 model. \ ORM to execute gen ai queries and fetch table rows from postgre,
+dsiplay output of fetched rows on react, node.js /express for auth routes
 
 ### configured to aiven cloud postgreDB to store user profile ,redis.io for message broker
 
