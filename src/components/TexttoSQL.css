@@ -1,0 +1,125 @@
+/* Container for the entire component */
+div {
+    display:contents;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  /* Heading styles */
+  h2 {
+    font-size: 28px;
+    /* color: #e0bdbd; */
+    margin-bottom: 15px;
+  }
+  
+  h3 {
+    font-size: 22px;
+    color: #faecec;
+    background-color: #b8c9ce;
+    padding: 10px;
+    border-radius: 4px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  
+  /* Textarea input */
+  textarea {
+    width: 50%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: none;
+    margin-bottom: -10px;
+  }
+  
+  /* Button styling */
+  button {
+    padding: 10px 20px;
+    /* margin-top: -115px; */
+    font-size: 16px;
+    color: #fff;
+    background-color: #4caf50;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-bottom: 10px;
+  }
+  
+  button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  button:hover:not(:disabled) {
+    background-color: #45a049;
+  }
+  
+  /* Error message */
+  p {
+    font-size: 16px;
+  }
+  
+  p[style*="color: 'red'"] {
+    color: red;
+    margin-top: 10px;
+  }
+  
+  /* SQL query display */
+  pre {
+    background-color: #314413;
+    padding: 15px;
+    border: 1px solid #543939;
+    border-radius: 5px;
+    width: 50%;
+    text-align: left;
+    white-space: pre-wrap; /* Ensures the query wraps nicely */
+    word-wrap: break-word;
+    font-size: 16px;
+  }
+
+  .result-table {
+    margin-top: 20px;
+  }
+  
+  .scrollable-table {
+    max-height: 200px; /* Adjust height as needed */
+    overflow-y: auto;
+    border: 1px solid #ddd;
+    padding: 10px;
+  }
+  
+  table {
+    padding: 10px;
+    width: 70%;
+    border-collapse: collapse;
+  }
+  
+  th, td {
+    border: 1px solid #ddd;
+    padding: 2px;
+    text-align: left;
+    font-size: 15px;
+  }
+  
+  th {
+    background-color: #c24444;
+  }
+  #taht{
+    font-size: medium;
+    border-radius: 5px;
+    padding: auto;
+    margin-top: 35px;
+    margin-bottom: 2px;
+    color: #d6caca;
+  }
+  
+  /* Upload CSV container */
+  div > div {
+    margin-top: 20px;
+    text-align: center;
+    width: 80%;
+  }
+  

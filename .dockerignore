@@ -1,0 +1,34 @@
+# Ignore Python cache files and directories
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Ignore virtual environments
+venv/
+.env/
+*.env
+
+# Ignore log files
+*.log
+
+# Ignore any temporary or backup files
+*.swp
+*.bak
+*.tmp
+
+# Ignore Git and other version control folders
+.git/
+.gitignore
+
+# Ignore Docker-related files (optional if you don’t need them in the image)
+.dockerignore
+Dockerfile
+
+# Ignore node_modules (if using Node.js as part of the project)
+node_modules/
+
+# Ignore local files and OS-specific files
+*.DS_Store
+*.vscode/
+.idea/
